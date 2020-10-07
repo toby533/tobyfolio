@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="167px" height="174px" viewBox="0 0 167 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logo</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-877.000000, -384.000000)" stroke="#FFFFFF" stroke-width="6">
+            <g id="logo" transform="translate(878.000000, 388.000000)">
+                <polygon id="Path-4" points="55.6389685 159.271507 82.0764088 166 108.361032 159.271507 109.302388 59.6775848 162 46.8567482 162 11 82.0764088 28.1270718 2 11 2 46.8567482 55.6389685 59.6775848"></polygon>
+                <line x1="82.5" y1="28" x2="82.5" y2="166" id="Path-3"></line>
+                <polyline id="Path-5" points="0.564541174 10.1499338 36.1469147 0 81.73631 10 135.768186 0 164 10.093624"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

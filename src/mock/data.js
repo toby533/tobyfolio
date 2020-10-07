@@ -2,64 +2,82 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Thibault Drevon | UX Designer',
+  lang: 'en, fr',
+  description: 'Hi, my name is Thibault Drevon and this is my Portfolio',
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
-};
-
-// ABOUT DATA
-export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  titleSection: 'About me',
+  firstName :'Thibault',
+  lastName:'Drevon',
+  title_en: 'UX Designer',
+  title_fr: "Concepteur d'expérience",
+  text_en: "Born in 1995 near from Paris, i lived in differents places in France before coming back to study in the Capital. I worked for 3 years in an big insurance company, then several month as a consultant before joining a start-up specialized in the video game industry.",
+  text_fr: "Né en 1995 près de Paris, j'ai vécu dans plusieurs régions en France avant de revenir faire mes études sur la Capitale. J'ai depuis travaillé 3 ans dans un grand groupe d'assurance, puis quelques mois en tant que consultant avant de rejoindre une start-up spécialisé dans le milieu des jeux vidéo.",
+  cta: 'Explore project',
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'nicecactus.jpg',
+    title: 'Nicecactus',
+    info: '#UX, #UI, #responsive',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'glory4gamers.jpg',
+    title: 'Glory4gamers',
+    info: '#UX, #UI, #Branding',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'happ-e.jpg',
+    title: 'Happ-e',
+    info: '#UX, #UI, #Branding',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'france-TV.jpg',
+    title: "France-TV 360",
+    info: '#UX, #reponsive, #Concept',
+    url: '',
+  },
+  {
+    id: nanoid(),
+    img: 'StarDrive.jpg',
+    title: 'Star Drive',
+    info: '#UX, #UI, #Mobile',
+    url: '',
+  },
+  {
+    id: nanoid(),
+    img: 'badgee.jpg',
+    title: 'Badgee',
+    info: '#UX, #UI, #Mobile',
+    url: '',
+  },
+  {
+    id: nanoid(),
+    img: 'prycix.jpg',
+    title: 'Prycix',
+    info: '#UX, #HTML-CSS, #JS,',
+    url: '',
   },
 ];
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
+  cta_en: 'Would you like to have a chat ?',
+  cta_fr:'Vous souhaitez discutez ?',
+  btn: "Let's Talk",
+  email: 'thibault.drevon@gmail.com',
 };
 
 // FOOTER DATA
@@ -72,17 +90,7 @@ export const footerData = {
     },
     {
       id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'github',
       url: '',
     },
   ],
@@ -90,5 +98,5 @@ export const footerData = {
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };

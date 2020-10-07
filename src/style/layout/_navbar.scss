@@ -1,0 +1,55 @@
+.navbar {
+  position:fixed;
+  top:0;
+  width:100%;
+  background-color:transparent;
+  color:$white-color;
+  z-index:10;
+  text-transform: uppercase;
+}
+
+.navbar.active {
+  color:$black-color;
+}
+
+.navbar-left {
+  margin:50px 20px;
+  text-align:left;
+}
+
+.navbar-right {
+  margin:0px 50px 50px;
+  text-align:right;
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  margin: 0px 0px 14px;
+  background-color: #00E676;
+  border-radius: 50%;
+  display: block;
+}
+
+.status-container {
+  width: 100%;
+}
+
+.status-text.scrolled {
+  transition: background-color 200ms linear;
+  color: black;
+}
+
+.back-to-top i {
+  position:fixed;
+  bottom:14px;
+  right:34px;
+  color: $dark-grey;
+  margin: 1rem 0 $default-font-size;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

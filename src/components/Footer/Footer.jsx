@@ -14,11 +14,6 @@ const Footer = () => {
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
-        <span className="back-to-top">
-          <Link to="hero" smooth duration={1000}>
-            <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
-          </Link>
-        </span>
         <div className="social-links">
           {networks &&
             networks.map((network) => {
@@ -31,17 +26,14 @@ const Footer = () => {
                   target="_blank"
                   aria-label={name}
                 >
-                  <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
+                  <i className={`fa fa-${name || 'refresh'}`} />
                 </a>
               );
             })}
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
-          </a>
+          © {new Date().getFullYear()} - Website developed by Thibault Drevon
         </p>
 
         {isEnabled && <GithubButtons />}
