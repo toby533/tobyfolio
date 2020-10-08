@@ -24,12 +24,20 @@
     &__text,
     p {
       font-size:3.6rem;
+
+      @include respond(phone) {
+        font-size:2.6rem;
+      } 
     }
 
     &__text.fr {
       margin-top: -3.5rem;
       font-size:3.2rem;
       color:#85818a;
+
+      @include respond(phone) {
+        font-size:2.4rem;
+      }
     }
 
     &__text,

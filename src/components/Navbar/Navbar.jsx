@@ -36,11 +36,11 @@ const Navbar = () => {
       <div>
         <div className={navbar ? 'navbar active' : 'navbar'}>
           <div className="navbar-left">
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px"><span className="dot"></span></Fade>
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+              <span className="dot"></span>
+            </Fade>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
-              <div className="status-container">
-                <p className="status-text">Status : <br/> OPEN TO WORK</p>
-              </div>
+              <p className="status-text">Status : <br/> OPEN TO WORK</p>
             </Fade>
           </div>
           <div className="navbar-right">
