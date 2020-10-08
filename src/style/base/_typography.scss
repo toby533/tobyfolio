@@ -44,11 +44,19 @@ a:hover {
 }
 
 .section-superTitle {
+  width:100%;
+}
+
+.section-superTitle > p {
   font-family: $fancy-font;
   font-size:15rem;
   color:$light-grey;
   text-align: left;
   margin-top:5rem;
+
+  @include respond(phone) {
+    font-size:8rem;
+  }
 }
 
 .dark-blue-text {

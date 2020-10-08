@@ -23,6 +23,7 @@
     margin-bottom: 50px;
 
     @include respond(phone) {
+      width:150px;
       margin-right:25px;
     }
 }
