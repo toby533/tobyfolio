@@ -3,9 +3,9 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-svg`,
     'gatsby-plugin-htaccess',
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,14 +32,6 @@ module.exports = {
         display: `standalone`,
         icon: 'src/images/favicon.png',
       },
-    },
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: /assets/
-        }
-      }
     },
     {
       resolve: 'gatsby-plugin-htaccess',

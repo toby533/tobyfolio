@@ -5,7 +5,6 @@
 @import './base/base';
 @import './base/typography';
 
-@import './animation/logoAnimation';
 @import './animation/scrollingBanner';
 
 @import './components/buttons';
@@ -17,5 +16,8 @@
 @import './sections/contact';
 @import './sections/hero';
 @import './sections/projects';
+@import './sections/welcome';
+
+@import './templates/projects-template';
 
 @import './vendor/css/font-awesome.min.css';

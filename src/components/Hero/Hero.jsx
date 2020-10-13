@@ -1,12 +1,12 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import HeroImg from '../Image/HeroImg';
 
-const Header = () => {
+const Hero = () => {
   const { hero } = useContext(PortfolioContext);
-  const { titleSection, firstName, lastName, title_en, title_fr, text_en, text_fr } = hero;
+  const { titleSection, firstName, lastName, img, title_en, title_fr, text_en, text_fr } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -24,42 +24,49 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
-        <div className="section-title-container">
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px"><div className="section-title-hr"></div></Fade>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1200} distance="30px"><p className="section-title">{titleSection}</p></Fade>
+        <div className="heroImg">
+          <Fade top={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="50px">
+            <div data-tilt className="thumbnail rounded">
+              <HeroImg filename={img} />
+            </div>
+          </Fade>
         </div>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <div className="section-title-container">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px"><div className="section-title-hr"></div></Fade>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={600} distance="30px"><p className="section-title">{titleSection}</p></Fade>
+        </div>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <p className="hero-name">{firstName}<br/>{lastName}</p>
         </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <p className="hero-title-en">
             {title_en}
           </p>
         </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <p className="hero-title-fr">
             {title_fr}
           </p>
         </Fade>
         <div className="hero-text-container">
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <p className="hero-text en">
               {text_en}
             </p>
           </Fade>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <p className="hero-text fr">
               {text_fr}
             </p>
           </Fade>
         </div>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <div className="section-superTitle">
             <p>Career</p>
           </div>
         </Fade>
         <ul className="hero-experience-list">
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <li>
               <p className="hero-experience-date">2020</p>
               <div className="hero-experience-text">
@@ -68,7 +75,7 @@ const Header = () => {
               </div>
             </li>
           </Fade>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <li>
               <p className="hero-experience-date">2019</p>
               <div className="hero-experience-text">
@@ -83,7 +90,7 @@ const Header = () => {
               </div>
             </li>
           </Fade>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <li>
               <p className="hero-experience-date">2018</p>
               <div className="hero-experience-text">
@@ -98,7 +105,7 @@ const Header = () => {
               </div>
             </li>
           </Fade>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <li>
               <p className="hero-experience-date">2017</p>
               <div className="hero-experience-text">
@@ -107,7 +114,7 @@ const Header = () => {
               </div>
             </li>
           </Fade>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <li>
               <p className="hero-experience-date">2016</p>
               <div className="hero-experience-text">
@@ -128,4 +135,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;

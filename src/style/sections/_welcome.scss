@@ -1,0 +1,59 @@
+#welcome {
+    margin-top: 35vh;
+    text-align: left;
+    width: 100vw;
+}
+
+.welcome-text {
+    font-size: 16rem;
+    line-height: 16rem;
+    text-align: left;
+    font-weight: 600;
+
+    @include respond(tab-land) {
+        font-size: 14rem;
+        line-height: 14rem;
+    }
+    @include respond(tab-port) {
+        font-size: 12rem;
+        line-height: 12rem;
+    }
+    @include respond(phone) {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    @include respond(phone-xs) {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+}
+
+.welcome-little-text {
+    position: absolute;
+    bottom: 15vh;
+    right: 35vh;
+    font-size: 2.4rem;
+
+    @include respond(tab-land) {
+        position: absolute;
+        bottom: 15vh;
+        right: 35vh;
+        font-size: 1.8rem;
+    }
+    @include respond(tab-port) {
+        position: absolute;
+        bottom: 15vh;
+        right: 35vh;
+        font-size: 1.8rem;
+    }
+    @include respond(phone) {
+        position: inherit;
+        font-size: 1.4rem;
+        width: 50vw;
+    }
+    @include respond(phone-xs) {
+        position: inherit;
+        font-size: 1.4rem;
+        width: 50vw;
+    }
+}

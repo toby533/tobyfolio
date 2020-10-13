@@ -9,6 +9,7 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
+  img:'thibault-profil.jpg',
   titleSection: 'About me',
   firstName :'Thibault',
   lastName:'Drevon',
@@ -26,49 +27,49 @@ export const projectsData = [
     img: 'nicecactus.jpg',
     title: 'Nicecactus',
     info: '#UX, #UI, #responsive',
-    url: '',
+    url: '/nicecactus/',
   },
   {
     id: nanoid(),
     img: 'glory4gamers.jpg',
     title: 'Glory4gamers',
     info: '#UX, #UI, #Branding',
-    url: '',
+    url: '/glory4gamers/',
   },
   {
     id: nanoid(),
     img: 'happ-e.jpg',
     title: 'Happ-e',
     info: '#UX, #UI, #Branding',
-    url: '',
+    url: '/happ-e/',
   },
   {
     id: nanoid(),
     img: 'france-TV.jpg',
     title: "France-TV 360",
     info: '#UX, #reponsive, #Concept',
-    url: '',
+    url: '/france-TV_360/',
   },
   {
     id: nanoid(),
     img: 'StarDrive.jpg',
     title: 'Star Drive',
     info: '#UX, #UI, #Mobile',
-    url: '',
+    url: '/StarDrive/',
   },
   {
     id: nanoid(),
     img: 'badgee.jpg',
     title: 'Badgee',
     info: '#UX, #UI, #Mobile',
-    url: '',
+    url: '/badgee/',
   },
   {
     id: nanoid(),
     img: 'prycix.jpg',
     title: 'Prycix',
     info: '#UX, #HTML-CSS, #JS,',
-    url: '',
+    url: '/prycix/',
   },
 ];
 
@@ -91,12 +92,12 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/thibaultdrevon/',
+    },
+    {
+      id: nanoid(),
+      name: 'github',
+      url: 'https://www.linkedin.com/in/thibaultdrevon/',
     },
   ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };

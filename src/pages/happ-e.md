@@ -1,0 +1,5 @@
+---
+title: "happ-e"
+---
+Ce projet fait suite à un appel d’offre mené par l’entreprise ENGIE en collaboration avec L’ECV∙Digital. Notre agence, l’agence Gens-marque® a remporté la première place grâce à sa proposition de service pour l’offre 100% digitale Happ-e.
+Notre idée a été de jouer sur la duplicité du grand fournisseur historique ENGIE et de la nouvelle petite offre Happ-e pour montrer les avantages des deux entreprises. Happ-e est donc la petite offre (petit prix) qui a tout d’une grande (grand service). Notre partie prit a également été de proposer à tous nos clients Happ-e, la possibilité de donner une partie de l’énergie qu’ils économisent à ceux le plus dans le besoin. Tous les mois donc, lors de la régularisation de votre facture, vous pouvez reverser l’équivalant de l’énergie économisée à des associations de votre choix.

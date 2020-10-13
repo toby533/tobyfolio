@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
+import SvgLogo from '../Logo/Logo';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import window from 'global';
@@ -33,25 +33,17 @@ const Navbar = () => {
   });
 
   return (
-      <div>
+      <div id="fixed-item">
         <div className={navbar ? 'navbar active' : 'navbar'}>
           <div className="navbar-left">
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <span className="dot"></span>
-            </Fade>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
-              <p className="status-text">Status : <br/> OPEN TO WORK</p>
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+              <SvgLogo/>
             </Fade>
           </div>
           <div className="navbar-right">
-            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="50px"><Link to="contact" smooth duration={1500}>Contact</Link></Fade>
+            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="50px"><Link to="contact" smooth duration={1500}>Contact</Link></Fade>
           </div>
         </div>
-        <span className="back-to-top">
-          <Link to="hero" smooth duration={1000}>
-            <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
-          </Link>
-          </span>
       </div>
   );
 };

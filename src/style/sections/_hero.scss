@@ -1,13 +1,11 @@
 #hero {
   display: flex;
-  margin-top: 15rem;
+  margin-top: 5rem;
   align-items: center;
   border-bottom: 0px;
   background: $white-color;
   font-weight: 100;
   color: $black-color;
-  padding: 0rem 25rem;
-  margin-bottom: 15rem;
   top: 0;
   left: 0;
   bottom: 0;
@@ -24,8 +22,25 @@
     padding: 0rem $default-font-size;
   }
 
+  .heroImg {
+    position: absolute;
+    right:10%;
+    width:500px;
+
+    @include respond(phone) {
+      position: inherit;
+      align-items: center;;
+      width: 100%;
+      margin-bottom: 10vh;
+    }
+  }
+
   .section-title-container {
     margin-bottom:5rem;
+  }
+
+  .HeroImg {
+    width:100%;
   }
 
   .hero-name {
@@ -103,14 +118,6 @@
     @include respond(phone-xs) {
       width:80%;
     }
-  }
-
-  .en {
-    color:$black-color;
-  }
-
-  .fr {
-    color:#85818a;
   }
 
   .hero-experience-list {

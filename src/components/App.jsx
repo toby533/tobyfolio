@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar/Navbar';
-import SvgComponent from './LogoAnimation/LogoAnimation';
+import Welcome from './Welcome/Welcome';
 import ScrollingBanner from './ScrollingBanner/ScrollingBanner';
 import Hero from './Hero/Hero';
 import Projects from './Projects/Projects';
@@ -9,7 +9,7 @@ import Footer from './Footer/Footer';
 
 import { PortfolioProvider } from '../context/context';
 
-import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
+import { heroData, projectsData, contactData, footerData } from '../mock/data';
 
 function App() {
   const [hero, setHero] = useState({});
@@ -27,7 +27,7 @@ function App() {
   return (
     <PortfolioProvider value={{ hero, projects, contact, footer }}>
       <Navbar />
-      <SvgComponent />
+      <Welcome />
       <Hero />
       <ScrollingBanner />
       <Projects />
