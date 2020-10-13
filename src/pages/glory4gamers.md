@@ -1,5 +1,8 @@
 ---
-title: "glory4gamers"
-date: "2017-08-21"
+title: "Glory4gamers"
+img: "Glory4gamers_cover"
+keywords: "UX, UI, Responsive"
+date: "2019-2020"
+text_en: ""
+text_fr: ""
 ---
-Do Pandas eat bananas? Check out this short video that shows that yes! pandas do seem to really enjoy bananas!

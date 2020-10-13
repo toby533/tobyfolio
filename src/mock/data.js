@@ -24,31 +24,31 @@ export const heroData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'nicecactus.jpg',
+    img: 'Nicecactus.jpg',
     title: 'Nicecactus',
     info: '#UX, #UI, #responsive',
-    url: '/nicecactus/',
+    url: '/Nicecactus/',
   },
   {
     id: nanoid(),
-    img: 'glory4gamers.jpg',
+    img: 'Glory4gamers.jpg',
     title: 'Glory4gamers',
     info: '#UX, #UI, #Branding',
-    url: '/glory4gamers/',
+    url: '/Glory4gamers/',
   },
   {
     id: nanoid(),
-    img: 'happ-e.jpg',
+    img: 'Happ-e.jpg',
     title: 'Happ-e',
     info: '#UX, #UI, #Branding',
-    url: '/happ-e/',
+    url: '/Happ-e/',
   },
   {
     id: nanoid(),
-    img: 'france-TV.jpg',
+    img: 'France-TV_360.jpg',
     title: "France-TV 360",
     info: '#UX, #reponsive, #Concept',
-    url: '/france-TV_360/',
+    url: '/France-TV_360/',
   },
   {
     id: nanoid(),
@@ -59,17 +59,17 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'badgee.jpg',
+    img: 'Badgee.jpg',
     title: 'Badgee',
     info: '#UX, #UI, #Mobile',
-    url: '/badgee/',
+    url: '/Badgee/',
   },
   {
     id: nanoid(),
-    img: 'prycix.jpg',
+    img: 'Prycix.jpg',
     title: 'Prycix',
     info: '#UX, #HTML-CSS, #JS,',
-    url: '/prycix/',
+    url: '/Prycix/',
   },
 ];
 

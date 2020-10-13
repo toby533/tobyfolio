@@ -22,18 +22,22 @@ export default function BlogPost({ data }) {
   return (
     <div>
       <Row>
-        <Col lg={8} sm={12}>
+        <Col lg={7} sm={12}>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <div className="Projects-template-img">
-            <ProjectImg alt={post.frontmatter.title} filename={post.frontmatter.title} />
+          <div className="projects-template-img">
+            <ProjectImg alt={post.frontmatter.img} filename={post.frontmatter.img} />
           </div>
         </Fade>
         </Col>
-        <Col lg={4} sm={12}>
+        <Col lg={5} sm={12}>
+        <div className="projects-template-text">
+          <p><a className="back-button" href="/" alt="back button"><i className="fa fa-arrow-left"></i></a></p>
           <h1>{post.frontmatter.title}</h1>
           <h2>{post.frontmatter.date}</h2>
-          <p className="project-text_en">{post.frontmatter.text_en}</p>
-          <p className="project-text_fr">{post.frontmatter.text_fr}</p>
+          <h3>{post.frontmatter.keywords}</h3>
+          <p className="project-text en">{post.frontmatter.text_en}</p>
+          <p className="project-text fr">{post.frontmatter.text_fr}</p>
+        </div>
         </Col>
       </Row>
     </div>
@@ -46,6 +50,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        img
+        keywords
         date
         text_en
         text_fr

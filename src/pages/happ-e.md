@@ -1,5 +1,7 @@
 ---
-title: "happ-e"
+title: "Happ-e"
+img: "Happ-e_cover"
+date: "2018-2019"
+text_en: "Star Drive is an app wich allow drivers to pay their car insurance according to their conduct. Real revolution in the world of pricing, this offer is possible thanks to a system of telemetry who calculate 4 scores: speed, acceleration, braking, bends. Combinate together the datas create a scoring."
+text_fr: "Star Drive est un service qui propose à ses clients de payer leur assurance automobile en fonction de leur conduite. Véritable révolution dans le monde du pricing cette offre est possible grâce à la collaboration du Lab’Assu et d’une entreprise canadienne qui ensemble ont construit un système de télémétrie permettant de calculer 4 scores : Vitesse, accélération, freinage, virages. "
 ---
-Ce projet fait suite à un appel d’offre mené par l’entreprise ENGIE en collaboration avec L’ECV∙Digital. Notre agence, l’agence Gens-marque® a remporté la première place grâce à sa proposition de service pour l’offre 100% digitale Happ-e.
-Notre idée a été de jouer sur la duplicité du grand fournisseur historique ENGIE et de la nouvelle petite offre Happ-e pour montrer les avantages des deux entreprises. Happ-e est donc la petite offre (petit prix) qui a tout d’une grande (grand service). Notre partie prit a également été de proposer à tous nos clients Happ-e, la possibilité de donner une partie de l’énergie qu’ils économisent à ceux le plus dans le besoin. Tous les mois donc, lors de la régularisation de votre facture, vous pouvez reverser l’équivalant de l’énergie économisée à des associations de votre choix.
