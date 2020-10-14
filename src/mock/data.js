@@ -24,21 +24,21 @@ export const heroData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'Nicecactus.jpg',
+    img: 'nicecactus.jpg',
     title: 'Nicecactus',
     info: '#UX, #UI, #responsive',
     url: '/Nicecactus/',
   },
   {
     id: nanoid(),
-    img: 'Glory4gamers.jpg',
+    img: 'glory4gamers.jpg',
     title: 'Glory4gamers',
     info: '#UX, #UI, #Branding',
     url: '/Glory4gamers/',
   },
   {
     id: nanoid(),
-    img: 'Happ-e.jpg',
+    img: 'happ-e.jpg',
     title: 'Happ-e',
     info: '#UX, #UI, #Branding',
     url: '/Happ-e/',
@@ -59,14 +59,14 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'Badgee.jpg',
+    img: 'badgee.jpg',
     title: 'Badgee',
     info: '#UX, #UI, #Mobile',
     url: '/Badgee/',
   },
   {
     id: nanoid(),
-    img: 'Prycix.jpg',
+    img: 'prycix.jpg',
     title: 'Prycix',
     info: '#UX, #HTML-CSS, #JS,',
     url: '/Prycix/',
