@@ -18,7 +18,8 @@
 }
 
 #TobyLogo {
-  width:100px;
+  width: 100px;
+  margin-left: 24px;
 
   @include respond(phone) {
     width: 56px;
