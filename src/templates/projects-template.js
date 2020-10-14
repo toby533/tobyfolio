@@ -22,14 +22,12 @@ export default function BlogPost({ data }) {
   return (
     <div>
       <Row>
-        <Col lg={7} sm={12}>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+        <Col className="no-padding" lg={7} sm={12}>
           <div className="projects-template-img">
             <ProjectImg alt={post.frontmatter.img} filename={post.frontmatter.img} />
           </div>
-        </Fade>
         </Col>
-        <Col lg={5} sm={12}>
+        <Col className="no-padding" lg={5} sm={12}>
         <div className="projects-template-text">
           <p><a className="back-button" href="/" alt="back button"><i className="fa fa-arrow-left"></i></a></p>
           <h1>{post.frontmatter.title}</h1>

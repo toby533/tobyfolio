@@ -3,6 +3,7 @@
 }
 
 .projects-template-text {
+    position:fixed;
     text-align:left;
     padding: 50px;
     height:100vh;
@@ -27,4 +28,8 @@ h1 {
 
 h2 {
     margin-bottom: 2.4rem;
+}
+
+.no-padding {
+    padding:0px;
 }
