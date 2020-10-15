@@ -1,24 +1,28 @@
 .projects-template-img {
-    width:100%;
+    width: 65%;
 }
 
 .projects-template-text {
-    position:fixed;
-    text-align:left;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 35%;
+    text-align: left;
     padding: 50px;
-    height:100vh;
-    background-color: white;
+    height: 100vh;
+    text-transform: none;
+    background-color: $white-color;
 }
 
-.back-button i {
-    font-size:2rem;
-    color:$black-color;
-}
-
-.back-button i:hover {
-    font-size:2rem;
-    color:$black-color;
-    opacity: 0.6;
+.back-button a i {
+    font-size: 1.4rem;
+    color: $white-color;
+    background-color: $black-color;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    line-height: 32px;
+    text-align: center;
 }
 
 h1 {
@@ -27,9 +31,11 @@ h1 {
 }
 
 h2 {
+    margin-top: 2.4rem;
     margin-bottom: 2.4rem;
 }
 
-.no-padding {
-    padding:0px;
+.projects-container {
+    width: 100vw;
+    padding: 0px;
 }

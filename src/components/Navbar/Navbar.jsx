@@ -1,8 +1,7 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
+import Burger from './Burger';
 import SvgLogo from '../Logo/Logo';
-import Fade from 'react-reveal/Fade';
-import { Link } from 'react-scroll';
-import window from 'global';
+
 
 const Navbar = () => {
 
@@ -21,7 +20,7 @@ const Navbar = () => {
   }, []);
 
   const changeBackground = () => {
-    if(window.scrollY >= 680) {
+    if(window.scrollY >= 20) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -32,20 +31,13 @@ const Navbar = () => {
     window.addEventListener("scroll", changeBackground);
   });
 
-  return (
-      <div id="fixed-item">
-        <div className={navbar ? 'navbar active' : 'navbar'}>
-          <div className="navbar-left">
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-              <SvgLogo/>
-            </Fade>
-          </div>
-          <div className="navbar-right">
-            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="50px"><Link to="contact" smooth duration={1500}>Contact</Link></Fade>
-          </div>
-        </div>
-      </div>
-  );
-};
 
-export default Navbar;
+  return (
+    <div className={navbar ? 'Nav active' : 'Nav'}>
+      <SvgLogo/>
+      <Burger />
+    </div>
+  )
+}
+
+export default Navbar
