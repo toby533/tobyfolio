@@ -2,6 +2,17 @@
     width: 65%;
 }
 
+.back-button a i {
+    font-size: 1.4rem;
+    color: $white-color;
+    background-color: $black-color;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
 .projects-template-text {
     position: fixed;
     right: 0px;
@@ -12,17 +23,6 @@
     height: 100vh;
     text-transform: none;
     background-color: $white-color;
-}
-
-.back-button a i {
-    font-size: 1.4rem;
-    color: $white-color;
-    background-color: $black-color;
-    height: 32px;
-    width: 32px;
-    border-radius: 32px;
-    line-height: 32px;
-    text-align: center;
 }
 
 h1 {

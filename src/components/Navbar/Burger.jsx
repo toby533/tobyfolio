@@ -5,9 +5,6 @@ import RightNavbar from './RightNavbar';
 const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
-    position: fixed;
-    top: 24px;
-    right: 24px;
     z-index: 20;
     display: none;
     @media (max-width: 768px) {
@@ -45,7 +42,7 @@ const Burger = () => {
         <div />
         <div />
       </StyledBurger>
-      <RightNavbar open={open}/>
+      <RightNavbar open={open} />
     </>
   )
 }

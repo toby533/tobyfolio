@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { graphql } from "gatsby";
 import ProjectImg from '../components/Image/ProjectImg';
+import '../style/main.scss';
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark

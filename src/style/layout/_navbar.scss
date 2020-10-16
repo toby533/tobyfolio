@@ -15,12 +15,13 @@
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 24px;
   top: 0px;
   z-index: 10;
   @media (max-width: 768px) {
     padding: 0 18px;
-    margin-top:0px;
+    margin-top: 24px;
   }
 }
 
