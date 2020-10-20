@@ -30,8 +30,8 @@
 
 .welcome-little-text {
     position: absolute;
-    bottom: 25%;
-    right: 25%;
+    bottom: 100px;
+    right: 200px;
     font-size: 1.8rem;
 
     @include respond(tab-land) {
