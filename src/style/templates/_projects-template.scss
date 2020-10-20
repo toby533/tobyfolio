@@ -1,5 +1,9 @@
 .projects-template-img {
     width: 65%;
+
+    @include respond(phone) {
+        width:100%;
+    }
 }
 
 .back-button a i {
@@ -23,6 +27,12 @@
     height: 100vh;
     text-transform: none;
     background-color: $white-color;
+
+    @include respond(phone) {
+        position: initial;
+        width:100%;
+        height: auto;
+    }
 }
 
 h1 {

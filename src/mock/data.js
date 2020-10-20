@@ -57,20 +57,6 @@ export const projectsData = [
     info: '#UX, #UI, #Mobile',
     url: '/projects/StarDrive/',
   },
-  {
-    id: nanoid(),
-    img: 'badgee.jpg',
-    title: 'Badgee',
-    info: '#UX, #UI, #Mobile',
-    url: '/projects/Badgee/',
-  },
-  {
-    id: nanoid(),
-    img: 'prycix.jpg',
-    title: 'Prycix',
-    info: '#UX, #HTML-CSS, #JS,',
-    url: '/projects/Prycix/',
-  },
 ];
 
 // CONTACT DATA
@@ -86,18 +72,13 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
       url: 'https://www.linkedin.com/in/thibaultdrevon/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: 'https://www.linkedin.com/in/thibaultdrevon/',
+      url: 'https://github.com/toby533/tobyfolio',
     },
   ],
 };
