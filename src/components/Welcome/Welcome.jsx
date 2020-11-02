@@ -20,8 +20,10 @@ const Welcome = () => {
   return (
     <section id="welcome">
       <Container>
-        <p className="welcome-text">Hi and welcome to my portfolio</p>
-        <p className="welcome-little-text fr">Bonjour et bienvenue sur mon portfolio</p>
+        <p className="welcome-text">I'm a designer who create user centric digital tools</p>
+        <hr className="hr-welcome"/>
+        <p className="welcome-text-little">I do prototype design, brand content and user focus workshop.</p>
+        <p className="welcome-text-little bold">Currently <span className="span-green">i’m open to work</span>.</p>
       </Container>
     </section>
   );

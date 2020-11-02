@@ -5,10 +5,11 @@
 }
 
 .welcome-text {
-    font-size: 16rem;
-    line-height: 16rem;
+    font-family: $fancy-font;
+    font-size: 5rem;
     text-align: left;
     font-weight: 600;
+    margin-bottom:24px;
 
     @include respond(tab-land) {
         font-size: 14rem;
@@ -28,34 +29,18 @@
     }
 }
 
-.welcome-little-text {
-    position: absolute;
-    bottom: 100px;
-    right: 200px;
-    font-size: 1.8rem;
+.welcome-text-little {
+    font-size:18px;
+    text-transform: none;
+    margin-top: 24px;
+}
 
-    @include respond(tab-land) {
-        position: absolute;
-        bottom: 65px;
-        right: 200px;
-        width: 250px;
-        font-size: 1.6rem;
-    }
-    @include respond(tab-port) {
-        position: absolute;
-        bottom: 275px;
-        right: 50px;
-        width: 250px;
-        font-size: 1.6rem;
-    }
-    @include respond(phone) {
-        position: inherit;
-        font-size: 1.4rem;
-        width: 50vw;
-    }
-    @include respond(phone-xs) {
-        position: inherit;
-        font-size: 1.4rem;
-        width: 50vw;
-    }
+.span-green {
+    color:#00E676;
+}
+
+.hr-welcome {
+    width:10%;
+    margin:0px;
+    border-color:#000;
 }
