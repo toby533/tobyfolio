@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar/Navbar';
 import Welcome from './Welcome/Welcome';
-import ScrollingBanner from './ScrollingBanner/ScrollingBanner';
 import Hero from './Hero/Hero';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
