@@ -1,15 +1,11 @@
-#welcome {
-    margin-top: 25vh;
-    text-align: left;
-    width: 100vw;
-}
-
 .welcome-text {
     font-family: $fancy-font;
-    font-size: 5rem;
+    text-transform: uppercase;
+    font-size: 54px;
+    font-weight:100;
     text-align: left;
-    font-weight: 600;
     margin-bottom:24px;
+    letter-spacing: 3px;
 
     @include respond(tab-land) {
         font-size: 14rem;
@@ -31,6 +27,7 @@
 
 .welcome-text-little {
     font-size:18px;
+    text-align: left;
     text-transform: none;
     margin-top: 24px;
 }

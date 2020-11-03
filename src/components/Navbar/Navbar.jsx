@@ -1,42 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import Burger from './Burger';
-import SvgLogo from '../Logo/Logo';
+import React from 'react';
+import styled from 'styled-components';
+import { Container } from 'react-bootstrap';
+import { Link } from 'react-scroll';
+
+const Ul = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  z-index:18;
+  margin-bottom:0px;
+  padding:0px;
+    li {
+      padding: 24px 24px;
+      cursor: pointer;
+    }
+    li a {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+`;
 
 
 const Navbar = () => {
 
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [navbar, setNavbar] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
-
-  const changeBackground = () => {
-    if(window.scrollY >= 20) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
-  });
-
-
   return (
-    <div className={navbar ? 'Nav active' : 'Nav'}>
-      <SvgLogo/>
-      <Burger />
-    </div>
+    <Container>
+      <div className="Navbar">
+        <p className="name-navbar">Thibault Drevon</p>
+        <Ul>
+        <li><Link to="projects" smooth duration={1000}>Work</Link></li>
+          <li><Link to="hero" smooth duration={1000}>About</Link></li>
+          <li><Link to="/" smooth duration={1000}>CV</Link></li>
+          <li><a target="_blank" rel="noopener noreferrer" href={`mailto:thibault.drevon@gmail.com`}/></li>
+        </Ul>
+      </div>
+    </Container>
   )
 }
 

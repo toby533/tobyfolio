@@ -25,12 +25,11 @@ function App() {
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, projects, contact, footer }}>
+    <PortfolioProvider className="row" value={{ hero, projects, contact, footer }}>
       <Navbar />
       <Welcome />
-      <Hero />
-      <ScrollingBanner />
       <Projects />
+      <Hero />
       <Contact />
       <Footer />
     </PortfolioProvider>

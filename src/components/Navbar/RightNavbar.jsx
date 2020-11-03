@@ -3,32 +3,30 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 const Ul = styled.ul`
+  position: fixed;
   list-style: none;
   display: flex;
-  flex-flow: row nowrap;
-  z-index:19;
+  z-index:19; 
   margin-bottom:0px;
   padding:0px;
+  text-align:left;
   li {
     padding: 24px 24px;
     font-size: 1.8rem;
     cursor: pointer;
   }
-  @media (max-width: 768px) {
-    flex-flow: column nowrap;
-    background-color: black;
-    position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 300px;
-    padding-top: 10rem;
-    transition: transform 0.3s ease-in-out;
-    li a {
-      color: #fff !important;
-      font-size: 2.4rem;
-    }
+  flex-flow: column nowrap;
+  background-color: #F4F3F3;
+  transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(100%)'};
+  top:0vh;
+  right: 0;
+  height: 100vh;
+  width: 85%;
+  padding-top: 10rem;
+  transition: transform 0.3s ease-in-out;
+  li a {
+    color: #000 !important;
+    font-size: 48px;
   }
 `;
 
