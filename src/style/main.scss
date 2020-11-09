@@ -5,12 +5,10 @@
 @import './base/base';
 @import './base/typography';
 
-@import './animation/scrollingBanner';
-
 @import './components/buttons';
 
+@import './layout/fixedGradiant';
 @import './layout/footer';
-@import './layout/navbar';
 @import './layout/sections';
 
 @import './sections/contact';

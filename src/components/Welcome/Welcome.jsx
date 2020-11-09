@@ -1,5 +1,5 @@
-import React, { useContext, useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import openToWork from '../../images/openToWork.png'
 import Fade from 'react-reveal/Fade';
 
 const Welcome = () => {
@@ -19,12 +19,20 @@ const Welcome = () => {
 
   return (
     <section id="welcome">
-      <Container>
-        <p className="welcome-text">I am a designer who create user centric digital tools</p>
-        <hr className="hr-welcome"/>
-        <p className="welcome-text-little">I do prototype design, brand content and user focus workshop.</p>
-        <p className="welcome-text-little bold">Currently <span className="span-green">i’m open to work</span>.</p>
-      </Container>
+      <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="50px">
+        <h1 className="name-text">Thibault <br/> Drevon</h1>
+      </Fade>
+      <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="50px">
+        <div className="openToWork-container">
+          <img className='openToWork-img' src={openToWork} alt="Open To Work"/>
+        </div>
+      </Fade>
+      <ul className="skills-list">
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={700} distance="50px"><li>Product designer</li></Fade>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={800} distance="50px"><li>Front developer</li></Fade>
+      </ul>
+      <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={900} distance="50px"><p className="baseline-text">I create website, application and design assets.</p></Fade>
+      <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="50px"><p className="localization-text">Based in Paris, France.</p></Fade>
     </section>
   );
 };

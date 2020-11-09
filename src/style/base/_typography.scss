@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rubik&display=swap" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Overpass&family=Roboto&display=swap" rel="stylesheet">');
 
 h1 {
   font-weight: 700;
@@ -33,19 +31,16 @@ a:hover {
 
 .section-title {
   font-family: $default-font;
-  font-size: $little-font-size;
+  font-size: $big-font-size;
   letter-spacing: 0.1rem;
   font-weight: 100;
   text-align:left;
-  text-transform: uppercase;
+  margin-top:20rem;
+  margin-bottom:2rem;
 
   @include respond(phone) {
-    font-size: 1.4rem;
+    font-size: 4rem;
   }
-}
-
-.section-superTitle {
-  width:100%;
 }
 
 .section-superTitle > p {

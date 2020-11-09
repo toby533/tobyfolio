@@ -1,0 +1,65 @@
+.FixedGradiant-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100rem;
+    overflow: hidden;
+
+    @include respond(big-desktop) {
+        width: 150rem;
+    }
+    @include respond(tab-land) {
+        width: 100rem;
+    }
+    @include respond(tab-port) {
+        width: 100rem;
+    }
+    @include respond(phone) {
+        width: 50rem;
+    }
+    @include respond(phone-xs) {
+        width: 50rem;
+    }
+}
+
+.FixedGradiant {
+    position: absolute;
+    top: -30rem;
+    right: -30rem;
+    width: 100rem;
+    height: 100rem;
+    background: radial-gradient(50% 50% at 50% 50%,#74b9ff 0,hsla(0,0%,100%,0) 100%);
+
+    @include respond(big-desktop) {
+        top: -50rem;
+        right: -60rem;
+        width: 150rem;
+        height: 150rem;
+    }
+    @include respond(tab-land) {
+        top: -50rem;
+        right: -50rem;
+        width: 150rem;
+        height: 150rem;
+    }
+    @include respond(tab-port) {
+        top: -50rem;
+        right: -50rem;
+        width: 150rem;
+        height: 150rem;
+    }
+    @include respond(phone) {
+        top: -10rem;
+        right: -20rem;
+        width: 50rem;
+        height: 50rem;
+    }
+    @include respond(phone-xs) {
+        top: -10rem;
+        right: -20rem;
+        width: 50rem;
+        height: 50rem;
+    }
+}

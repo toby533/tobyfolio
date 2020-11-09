@@ -25,37 +25,23 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'nicecactus.jpg',
-    title: 'Nicecactus',
-    info: '#UX, #UI, #responsive',
+    title: 'Nicecactus, the all-in-one esports platform',
+    info: 'I led the user experience creation of 3 websites including workflow navigation, wireframes and user inteface design.',
     url: '/projects/Nicecactus/',
   },
   {
     id: nanoid(),
     img: 'glory4gamers.jpg',
-    title: 'Glory4gamers',
-    info: '#UX, #UI, #Branding',
+    title: 'Glory4gamers, daily online esports tournaments',
+    info: 'I worked on the user interface of an existing website and create visual content to promote events on the social media.',
     url: '/projects/Glory4gamers/',
   },
   {
     id: nanoid(),
     img: 'happ-e.jpg',
-    title: 'Happ-e',
-    info: '#UX, #UI, #Branding',
+    title: 'Happ-e, the 100% online electricity subscription',
+    info: 'I worked on the user interface of an existing website and create visual content to promote events on the social media.',
     url: '/projects/Happ-e/',
-  },
-  {
-    id: nanoid(),
-    img: 'France-TV_360.jpg',
-    title: "France-TV 360",
-    info: '#UX, #reponsive, #Concept',
-    url: '/projects/France-TV_360/',
-  },
-  {
-    id: nanoid(),
-    img: 'StarDrive.jpg',
-    title: 'Star Drive',
-    info: '#UX, #UI, #Mobile',
-    url: '/projects/StarDrive/',
   },
 ];
 

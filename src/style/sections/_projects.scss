@@ -1,11 +1,27 @@
 #projects {
-  background-color: $white-color;
   color: $black-color;
+  padding: 0 15rem;
 
-  @include respond(tab-land) {
-    margin-top: 0;
-    padding-top: 5rem;
-  }
+  @include respond(big-desktop) {
+    padding: 0 15rem;
+    margin-top: 10rem;
+   }
+   @include respond(tab-land) {
+    padding: 0 5rem;
+    margin-top: 10rem;
+   }
+   @include respond(tab-port) {
+    padding: 0 10rem;
+    margin-top: 5rem;
+   }
+   @include respond(phone) {
+    padding: 0 2rem;
+    margin-top: 5rem;
+   }
+   @include respond(phone-xs) {
+    padding: 0 2rem;
+    margin-top: 5rem;
+   }
 
   .project-wrapper {
     margin-bottom: 15rem;
@@ -15,7 +31,7 @@
     }
 
     .row {
-      margin-bottom: 10rem;
+      margin-bottom:10rem;
       margin-top:10rem;
 
       @include respond(phone) {
@@ -25,55 +41,39 @@
       }
     }
 
-    .row:nth-of-type(2) {
-      padding-right:50%;
-    }
-
-    .row:nth-of-type(3) {
-      padding-left:50%;
-    }
-
-    .row:nth-of-type(4) {
-      padding-right:50%;
-    }
-
-    .row:nth-of-type(5) {
-      padding-left:50%;
-    }
-
-    .row:nth-of-type(6) {
-      padding-right:50%;
-    }
-
-    .row:nth-of-type(7) {
-      padding-left:50%;
-    }
-
-    .row:nth-of-type(8) {
-      padding-right:50%;
-    }
-
     &__text {
+      position: absolute;
+      width: 400px;
+      top: 15%;
+      left: 5%;
       text-align: left;
       margin-top: 24px;
 
       @include respond(phone) {
-        margin-bottom: 2.5rem !important;
-        margin-top: 0rem;
+        position: absolute;
+        width: 50%;
+        top: 24px;
+        left: 24px;
+        text-align: left;
+        margin-top: 24px;
       }
       @include respond(tab-land) {
-        margin-bottom: 4.8rem;
         margin-top: 0rem;
       }
 
       &-title {
         font-weight: bold;
-        margin-bottom: 14px;
-        font-size: $default-font-size;
+        margin-bottom: 24px;
+        font-size: 4rem;
+        font-family: $fancy-font;
 
         @include respond(phone) {
-          font-size: $default-font-size;
+          font-size: 24px;
         }
+      }
+
+      & p {
+        font-size:1.8rem;
       }
 
       & p > a {
@@ -83,6 +83,7 @@
 
     &__image {
       width: 100%;
+      box-shadow: 0 16px 30px 0 rgba(33,33,33,.2);
       margin: 0 auto;
 
       @include respond(tab-land) {
@@ -90,30 +91,55 @@
         margin: 0;
       }
 
+      @include respond(phone) {
+        width:100%;
+        margin: 0;
+      }
+
       & .thumbnail {
         border: none;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-        transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 
-          0.5s box-shadow, 0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
 
         @include respond(phone) {
-          border: 1px solid #d2d2d2;
           box-shadow: none;
-          margin-bottom: 3.2rem;
+          margin-bottom: 1.4rem;
+        }
+      }
+
+      & .thumbnail div {
+        @include respond(phone) {
+          height:500px;
+        }
+      }
+
+      & .thumbnail img {
+        @include respond(phone) {
+          left:30% !important;
         }
       }
     }
   }
 }
 
-@media (max-width: 37.5em) {
-  #projects .project-wrapper__image .thumbnail {
-      border: 1px solid #d2d2d2;
-      box-shadow: none;
-      margin-bottom: 1.4rem;
+.cta-btn--project {
+  width:180px;
+  height:48px;
+  margin-top: 14px;
+  padding: 1.4rem 4.4rem;
+  font-weight: 200;
+  color: $black-color;
+  border: 1px solid #000;
+  font-size: 1.8rem;
+
+  &::after {
+    background: $black-color;
   }
-  #projects .project-wrapper__text {
-    margin-bottom: 0.5rem !important;
-    margin-top: 0rem;
+
+  &:hover {
+    color: $white-color;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
   }
 }

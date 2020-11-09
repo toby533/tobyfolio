@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './Navbar/Navbar';
+import FixedGradiant from './FixedGradiant/FixedGradiant';
 import Welcome from './Welcome/Welcome';
 import Hero from './Hero/Hero';
 import Projects from './Projects/Projects';
@@ -25,7 +25,7 @@ function App() {
 
   return (
     <PortfolioProvider className="row" value={{ hero, projects, contact, footer }}>
-      <Navbar />
+      <FixedGradiant />
       <Welcome />
       <Projects />
       <Hero />
