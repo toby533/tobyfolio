@@ -61,20 +61,20 @@ const Projects = () => {
                   distance="30px"
                 >
                   <div className="project-wrapper__text">
-                    <h3 className="project-wrapper__text-title">{title}</h3>
-                    <div>
+                    <div className="project-wrapper__verticalAlign">
+                      <h3 className="project-wrapper__text-title">{title}</h3>
                       <p>
                         {info}
                       </p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--project"
+                        href={url}
+                      >
+                        See project
+                      </a>
                     </div>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--project"
-                      href={url}
-                    >
-                      See project
-                    </a>
                   </div>
                 </Fade>
               </Col>

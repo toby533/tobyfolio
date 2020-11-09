@@ -1,6 +1,6 @@
 #welcome {
     padding: 0 10rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
 
     @include respond(big-desktop) {
      padding: 0 15rem;
@@ -8,7 +8,7 @@
     }
     @include respond(tab-land) {
      padding: 0 5rem;
-     margin-top: 10rem;
+     margin-top: 8rem;
     }
     @include respond(tab-port) {
      padding: 0 10rem;
@@ -60,7 +60,7 @@
     font-size: 4rem;
     font-weight: 400;
     list-style: square;
-    margin: 10rem 0;
+    margin: 8rem 0;
 
     @include respond(big-desktop) {
      font-size: 4rem;
@@ -68,11 +68,11 @@
     }
     @include respond(tab-land) {
      font-size: 4rem;
-     margin: 10rem 0;
+     margin: 8rem 0;
     }
     @include respond(tab-port) {
      font-size: 4rem;
-     margin: 10rem 0;
+     margin: 8rem 0;
     }
     @include respond(phone) {
      font-size: 2rem;
