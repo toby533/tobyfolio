@@ -34,13 +34,6 @@ const Projects = () => {
           return (
             <Row key={id}>
                 <Col lg={12} sm={12}>
-                <Fade
-                  top={isDesktop}
-                  bottom={isMobile}
-                  duration={1000}
-                  delay={500}
-                  distance="30px"
-                >
                   <div className="project-wrapper__image">
                     <a
                       href={url}
@@ -52,9 +45,8 @@ const Projects = () => {
                         </div>
                     </a>
                   </div>
-                </Fade>
                 <Fade
-                  top={isDesktop}
+                  left={isDesktop}
                   bottom={isMobile}
                   duration={500}
                   delay={500}

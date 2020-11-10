@@ -51,14 +51,14 @@
         height: 150rem;
     }
     @include respond(phone) {
-        top: -10rem;
-        right: -20rem;
+        top: -15rem;
+        right: -25rem;
         width: 50rem;
         height: 50rem;
     }
     @include respond(phone-xs) {
-        top: -10rem;
-        right: -20rem;
+        top: -15rem;
+        right: -25rem;
         width: 50rem;
         height: 50rem;
     }
