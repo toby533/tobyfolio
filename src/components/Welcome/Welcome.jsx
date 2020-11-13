@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import openToWork from '../../images/openToWork.png'
 import Fade from 'react-reveal/Fade';
+import Dot from '../Dot/Dot';
 
 const Welcome = () => {
 
@@ -27,10 +28,18 @@ const Welcome = () => {
           <img className='openToWork-img' src={openToWork} alt="Open To Work"/>
         </div>
       </Fade>
-      <ul className="skills-list">
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={700} distance="50px"><li>Product designer</li></Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={800} distance="50px"><li>Front developer</li></Fade>
-      </ul>
+      <div className="job-container">
+        <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={600} distance="50px">
+        <div className="job">
+          <Dot/><p>Product designer</p>
+        </div>
+        </Fade>
+        <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={700} distance="50px">
+        <div className="job">
+          <Dot/><p>Front developer</p>
+        </div>
+        </Fade>
+      </div>
       <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={900} distance="50px"><p className="baseline-text">I create website, application and design assets.</p></Fade>
       <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="50px"><p className="localization-text">Based in Paris, France.</p></Fade>
     </section>

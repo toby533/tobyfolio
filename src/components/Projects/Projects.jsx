@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
@@ -25,8 +25,8 @@ const Projects = () => {
     <section id="projects">
       <div className="project-wrapper">
         <div className="section-title-container">
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={600} distance="30px"><Title title="Selected projects" className="section-title"/></Fade>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px"><div className="section-title-hr"></div></Fade>
+          <Title title="Selected projects" className="section-title"/>
+          <div className="section-title-hr"></div>
         </div>
         {projects.map((project) => {
           const { title, info, url, img, id } = project;

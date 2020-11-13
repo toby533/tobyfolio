@@ -1,7 +1,5 @@
 #contact {
   background-color:$white-color;
-  padding: 20rem 0 10rem 0;
-  margin-top: -15rem;
   margin-bottom: -1px;
   color: $black-color;
 
@@ -13,8 +11,8 @@
   }
 
   .contact-wrapper {
-    margin-top: 3.2rem;
-    padding: 0 2rem;
+    padding: 10rem 0rem;
+    text-align:left;
     backface-visibility: hidden;
 
     &__text {
@@ -23,30 +21,25 @@
 
     &__text,
     p {
-      font-size:3.6rem;
-
-      @include respond(phone) {
-        font-size:2.6rem;
-      } 
-    }
-
-    &__text.fr {
-      margin-top: -3.5rem;
-      font-size:3.2rem;
-      color:#85818a;
+      font-size:5rem;
+      font-weight: 500;
+      margin-bottom: 10rem;
 
       @include respond(phone) {
         font-size:2.4rem;
-      }
-    }
+      } 
+  }
 
     &__text,
     a {
-      font-size: 2.4rem;
+      margin-top:2rem;
+      font-size: 5rem;
+      font-weight: 400;
+      text-decoration: underline;
 
       // Responsive for contact text
       @include respond(phone) {
-        font-size: 2rem;
+        font-size: 2.4rem;
       }
     }
   }

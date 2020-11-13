@@ -1,5 +1,5 @@
-@import url('<link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">');
-@import url('<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 h1 {
   font-weight: 700;
@@ -37,7 +37,6 @@ a:hover {
   letter-spacing: 0.1rem;
   font-weight: 100;
   text-align:left;
-  margin-top:20rem;
   margin-bottom:2rem;
 
   @include respond(phone) {

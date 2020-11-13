@@ -10,26 +10,18 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <Container>
-        <Fade bottom duration={1000} delay={800} distance="30px">
-          <div className="contact-wrapper">
-            <p className="contact-wrapper__text en">
-              {cta_en}
-            </p>
-            <p className="contact-wrapper__text fr">
-              {cta_fr}
-            </p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--resume"
-              href={`mailto:${email}`}
-            >
-              {btn}
-            </a>
-          </div>
-        </Fade>
-      </Container>
+      <Fade bottom duration={1000} delay={800} distance="30px">
+        <div className="contact-wrapper">
+          <p>Get in touch</p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={`mailto:${email}`}
+          >
+            thibault.drevon@gmail.com
+          </a>
+        </div>
+      </Fade>
     </section>
   );
 };

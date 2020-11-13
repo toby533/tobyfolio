@@ -1,44 +1,29 @@
 #projects {
-  color: $black-color;
-  padding: 0 10rem;
-
-  @include respond(big-desktop) {
-    padding: 0 15rem;
-    margin-top: 10rem;
-   }
-   @include respond(tab-land) {
-    padding: 0 5rem;
-    margin-top: 10rem;
-   }
-   @include respond(tab-port) {
-    padding: 0 10rem;
-    margin-top: 5rem;
-   }
-   @include respond(phone) {
-    padding: 0 2rem;
-    margin-top: 0rem;
-   }
-   @include respond(phone-xs) {
-    padding: 0 2rem;
-    margin-top: 0rem;
-   }
 
   img {
+    @include respond(tab-port) {
+      object-position: right center !important;
+    }
     @include respond(phone) {
       object-position: right center !important;
     }
   }
 
   .project-wrapper {
-    margin-bottom: 15rem;
+    margin-bottom: 20rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
     }
 
     .row {
-      margin-bottom:10rem;
-      margin-top:10rem;
+      margin-bottom:5rem;
+      margin-top:5rem;
+
+      @include respond(big-desktop) {
+        margin-bottom:10rem;
+        margin-top:10rem;
+       }
 
       @include respond(phone) {
         margin-bottom: 3rem;
@@ -54,11 +39,11 @@
       height:100%;
       text-align: left;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         display:none;
       }
-      @include respond(tab-land) {
-        margin-top: 0rem;
+      @include respond(phone) {
+        display:none;
       }
 
       &-title {
@@ -67,13 +52,16 @@
         font-size: 3rem;
         font-family: $fancy-font;
 
-        @include respond(phone) {
-          font-size: 24px;
+        @include respond(tab-land) {
+          font-size: 2.4rem;
         }
       }
 
       & p {
         font-size:1.8rem;
+        @include respond(tab-land) {
+          font-size: 1.6rem;
+        }
       }
 
       & p > a {
@@ -85,17 +73,17 @@
       width: 35%;
       padding-top: 10%;
       padding-left: 5%;
+
+      @include respond(tab-land) {
+        padding-top: 5%;
+        padding-left: 5%;
+      }
     }
 
     &__image {
       width: 100%;
       box-shadow: 0 16px 30px 0 rgba(33,33,33,.2);
       margin: 0 auto;
-
-      @include respond(tab-land) {
-        width: 100%;
-        margin: 0;
-      }
 
       @include respond(phone) {
         width:100%;
@@ -104,14 +92,12 @@
 
       & .thumbnail {
         border: none;
-
-        @include respond(phone) {
-          box-shadow: none;
-          margin-bottom: 1.4rem;
-        }
       }
 
       & .thumbnail div {
+        @include respond(tab-port) {
+          height:400px;
+        }
         @include respond(phone) {
           height:300px;
         }
