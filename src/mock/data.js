@@ -49,17 +49,19 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'happ-e.jpg',
-    title: 'Happ-e, the 100% online electricity subscription',
-    info: 'I worked on the user interface of an existing website and create visual content to promote events on the social media.',
-    url: '/projects/Happ-e/',
+    img: 'France-TV_360.jpg',
+    title: 'France-TV 360',
+    info: 'Explore television',
+    tag: 'Identity, website design',
+    url: '/projects/France-TV_360/',
   },
   {
     id: nanoid(),
-    img: 'happ-e.jpg',
-    title: 'Happ-e, the 100% online electricity subscription',
-    info: 'I worked on the user interface of an existing website and create visual content to promote events on the social media.',
-    url: '/projects/Happ-e/',
+    img: 'badgee.jpg',
+    title: 'Badgee',
+    info: 'Easy secure access',
+    tag: 'App design',
+    url: '/projects/badgee/',
   },
 ];
 
