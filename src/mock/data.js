@@ -2,22 +2,15 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Thibault Drevon | UX Designer',
+  title: 'Thibault Drevon, Product designer / Front developer',
   lang: 'en, fr',
   description: 'Hi, my name is Thibault Drevon and this is my Portfolio',
 };
 
 // HERO DATA
 export const heroData = {
-  img:'thibault-profil.jpg',
   titleSection: 'About me',
-  firstName :'Thibault',
-  lastName:'Drevon',
-  title_en: 'UX Designer',
-  title_fr: "Concepteur d'expérience",
-  text_en: "Born in 1995 near from Paris, i lived in differents places in France before coming back to study in the Capital. I worked for 3 years in an big insurance company, then several month as a consultant before joining a start-up specialized in the video game industry.",
-  text_fr: "Né en 1995 près de Paris, j'ai vécu dans plusieurs régions en France avant de revenir faire mes études sur la Capitale. J'ai depuis travaillé 3 ans dans un grand groupe d'assurance, puis quelques mois en tant que consultant avant de rejoindre une start-up spécialisé dans le milieu des jeux vidéo.",
-  cta: 'Explore project',
+  text:"I am passionate about technology. I learned to code when I was working in a digital lab. After that, I decided to learn UX by taking a master's degree in ergonomics and design. These days, I like to create intuitive interfaces that match the needs and passions of users."
 };
 
 // PROJECTS DATA
@@ -25,16 +18,41 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'nicecactus.jpg',
-    title: 'Nicecactus, the all-in-one esports platform',
-    info: 'I led the user experience creation of 3 websites including workflow navigation, wireframes and user inteface design.',
+    title: 'Nicecactus',
+    info: 'All-in-one esport platform',
+    tag: 'Product design',
     url: '/projects/Nicecactus/',
   },
   {
     id: nanoid(),
     img: 'glory4gamers.jpg',
-    title: 'Glory4gamers, daily online esports tournaments',
-    info: 'I worked on the user interface of an existing website and create visual content to promote events on the social media.',
+    title: 'Smah4glory',
+    info: 'Weekly LAN',
+    tag: 'Identity',
     url: '/projects/Glory4gamers/',
+  },
+  {
+    id: nanoid(),
+    img: 'glory4gamers.jpg',
+    title: 'Glory4gamers',
+    info: 'Daily online esports tournaments',
+    tag: 'Product design',
+    url: '/projects/Glory4gamers/',
+  },
+  {
+    id: nanoid(),
+    img: 'happ-e.jpg',
+    title: 'Happ-e',
+    info: 'The 100% online electricity subscription',
+    tag: 'Identity, website design',
+    url: '/projects/Happ-e/',
+  },
+  {
+    id: nanoid(),
+    img: 'happ-e.jpg',
+    title: 'Happ-e, the 100% online electricity subscription',
+    info: 'I worked on the user interface of an existing website and create visual content to promote events on the social media.',
+    url: '/projects/Happ-e/',
   },
   {
     id: nanoid(),
@@ -47,9 +65,7 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta_en: 'Would you like to have a chat ?',
-  cta_fr:'Vous souhaitez discutez ?',
-  btn: "Let's Talk",
+  text: 'You are looking for a creative designer ?',
   email: 'thibault.drevon@gmail.com',
 };
 

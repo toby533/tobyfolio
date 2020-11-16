@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Logo from '../Logo/Logo';
 import Fade from 'react-reveal/Fade';
 
-const Welcome = () => {
+const FixedName = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -18,15 +17,19 @@ const Welcome = () => {
   }, []);
 
   return (
-    <div id="welcome">
-      <Fade top={isDesktop} top={isMobile} duration={500} delay={500} distance="50px">
-        <Logo/>
+    <div className="fixed-name-container">
+      <Fade left={isDesktop} top={isMobile} duration={500} delay={500} distance="50px">
+        <div>
+            <p>Thibault</p>
+        </div>
       </Fade>
-      <Fade bottom={isDesktop} bottom={isMobile} duration={500} delay={500} distance="50px">
-        <hr/>
+      <Fade right={isDesktop} bottom={isMobile} duration={500} delay={500} distance="50px">
+        <div>
+            <p>Drevon</p>
+        </div>
       </Fade>
     </div>
   );
 };
 
-export default Welcome;
+export default FixedName;

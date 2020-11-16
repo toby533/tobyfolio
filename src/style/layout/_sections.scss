@@ -1,12 +1,8 @@
 // Section
 section {
-  padding: 0 10rem;
+  padding: 0 8rem;
   margin-top: 10rem;
 
-  @include respond(big-desktop) {
-   padding: 0 15rem;
-   margin-top: 10rem;
-  }
   @include respond(tab-land) {
    padding: 0 8rem;
    margin-top: 8rem;

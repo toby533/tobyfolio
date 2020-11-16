@@ -3,12 +3,19 @@ import * as React from "react"
 function SvgLogo(props) {
   return (
     <div className="logo-container">
-      <svg id="TobyLogo" viewBox="0 0 167 174" {...props}>
-        <title>{"Toby-logo"}</title>
-        <g stroke="#000" strokeWidth={6} fill="none" fillRule="evenodd">
-          <path d="M56.639 163.272L83.076 170l26.285-6.728.941-99.594L163 50.857V15L83.076 32.127 3 15v35.857l53.639 12.82zM83.5 32v138M1.565 14.15L37.147 4l45.59 10 54.031-10L165 14.094" />
-        </g>
-      </svg>
+      <svg
+      width={45}
+      height={54}
+      viewBox="0 0 45 54"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>{"T"}</title>
+      <path
+        d="M29.201 54V10.539H45L34.708 0H19v43.368L29.201 54zM16 10V0H0l10.483 10H16z"
+        fill="#000"
+        fillRule="nonzero"
+      />
+    </svg>
     </div>
   )
 }
