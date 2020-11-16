@@ -17,16 +17,16 @@ const FixedName = () => {
   }, []);
 
   return (
-    <div className="fixed-name-container">
+    <div className="FixedName">
       <Fade left={isDesktop} top={isMobile} duration={500} delay={500} distance="50px">
-        <div>
-            <p>Thibault</p>
-        </div>
+        <p id="thibault">
+            <span>Thibault</span>
+        </p>
       </Fade>
       <Fade right={isDesktop} bottom={isMobile} duration={500} delay={500} distance="50px">
-        <div>
-            <p>Drevon</p>
-        </div>
+        <p id="drevon">
+			<span>Drevon</span>
+		</p>
       </Fade>
     </div>
   );

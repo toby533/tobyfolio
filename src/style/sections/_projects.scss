@@ -27,8 +27,8 @@
        }
 
       @include respond(phone) {
-        margin-bottom: 3rem;
-        margin-top: 3rem;
+        margin-bottom: 25rem;
+        margin-top: 15rem;
         padding:0px !important;
       }
     }
@@ -39,7 +39,7 @@
         font-weight: bold;
         font-size: 1.8rem;
         font-family: $fancy-font;
-        margin-top: 4rem;
+        margin-top: 5rem;
         margin-bottom: 1rem;
       }
 
@@ -63,8 +63,8 @@
       margin: 0 auto;
 
       @include respond(phone) {
-        width:100%;
-        margin: 0;
+        width:90%;
+        margin-left: 5%;
       }
 
       & .thumbnail {
