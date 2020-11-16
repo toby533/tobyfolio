@@ -55,7 +55,7 @@ const Projects = () => {
                         {tag}
                       </p>
                       <a
-                        target="_blank"
+                        target="_self"
                         rel="noopener noreferrer"
                         className="cool-link"
                         href={url}

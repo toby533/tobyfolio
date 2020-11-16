@@ -62,11 +62,6 @@
       max-width:960px;
       margin: 0 auto;
 
-      @include respond(phone) {
-        width:90%;
-        margin-left: 5%;
-      }
-
       & .thumbnail {
         border: none;
       }

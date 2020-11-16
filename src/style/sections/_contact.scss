@@ -1,46 +1,33 @@
 #contact {
   background-color:$white-color;
-  margin-bottom: -1px;
+  margin: 5rem 0;
   color: $black-color;
 
   @include respond(tab-land) {
-    padding: 10rem 0;
     clip-path: none;
     margin-top: 0;
     -webkit-clip-path: none;
   }
 
   .contact-wrapper {
-    padding: 10rem 0rem;
-    text-align:left;
-    backface-visibility: hidden;
-
-    &__text {
-      margin-bottom: 3.5rem;
-    }
+    text-align:center;
 
     &__text,
     p {
-      font-size:5rem;
-      font-weight: 500;
-      margin-bottom: 10rem;
-
-      @include respond(phone) {
-        font-size:2.4rem;
-      } 
-  }
+      font-size:2rem;
+      margin-bottom: 3rem;
+    }
 
     &__text,
     a {
-      margin-top:2rem;
-      font-size: 5rem;
+      padding:1rem 2rem;
+      background-color:black;
+      border-radius:80px;
+      margin-top: 2rem;
+      font-size: 2rem;
       font-weight: 400;
-      text-decoration: underline;
-
-      // Responsive for contact text
-      @include respond(phone) {
-        font-size: 2.4rem;
-      }
+      color:white;
+      text-decoration: none;
     }
   }
 }

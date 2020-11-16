@@ -1,5 +1,5 @@
 #hero {
-  margin-bottom: 30rem;
+  margin-bottom: 15rem;
   margin-top: 30rem;
 }
 
@@ -8,4 +8,8 @@
   font-weight: 400;
   text-align: left;
   margin: 5rem 0;
+
+  @include respond(phone) {
+    font-size:2rem;
+  }
 }

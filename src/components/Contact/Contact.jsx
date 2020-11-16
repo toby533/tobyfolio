@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import PortfolioContext from '../../context/context';
-import Footer from '../Footer/Footer';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
@@ -17,11 +16,10 @@ const Contact = () => {
             rel="noopener noreferrer"
             href={`mailto:${email}`}
           >
-            thibault.drevon@gmail.com
+            Contact me
           </a>
         </div>
       </Fade>
-      <Footer/>
     </section>
   );
 };

@@ -10,7 +10,7 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   titleSection: 'About me',
-  text:"I am passionate about technology. I learned to code when I was working in a digital lab. After that, I decided to learn UX by taking a master's degree in ergonomics and design. These days, I like to create intuitive interfaces that match the needs and passions of users."
+  text:"I'm passionate of technology. I learned to code when I was working in a digital lab. After that, I decided to learn UX by taking a master's degree in ergonomics and design. These days, I like to create intuitive interfaces that match the needs and passions of users."
 };
 
 // PROJECTS DATA
@@ -25,7 +25,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'glory4gamers.jpg',
+    img: 'smash4glory.jpg',
     title: 'Smah4glory',
     info: 'Weekly LAN',
     tag: 'Identity',
@@ -49,6 +49,14 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'StarDrive.jpg',
+    title: 'Star Drive',
+    info: 'Pay how you drive',
+    tag: 'App design',
+    url: '/projects/badgee/',
+  },
+  {
+    id: nanoid(),
     img: 'France-TV_360.jpg',
     title: 'France-TV 360',
     info: 'Explore television',
@@ -67,7 +75,7 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  text: 'You are looking for a creative designer ?',
+  text: 'You have a question ?',
   email: 'thibault.drevon@gmail.com',
 };
 

@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import PortfolioContext from '../../context/context';
-import HeroImg from '../Image/HeroImg';
 import Title from '../Title/Title';
 
 const Hero = () => {
