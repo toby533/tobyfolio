@@ -3,7 +3,7 @@ import Logo from '../Logo/Logo';
 import Fade from 'react-reveal/Fade';
 import { Link } from "gatsby";
 
-const Header = () => {
+const Navbar = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -20,21 +20,24 @@ const Header = () => {
 
   return (
     <div id="Navbar">
-      <Fade top={isDesktop} top={isMobile} duration={500} delay={500} distance="50px">
+      <div className="top-nav">
+        <div className="change-color"></div>
         <Logo/>
-      </Fade>
-      <hr/>
+        <div className="contact"></div>
+      </div>
       <nav>
         <Link to="/" activeClassName="active">
           Work
+        </Link>
+        <Link to="/Skills/">
+          Skills
         </Link>
         <Link to="/about/">
           About
         </Link>
       </nav>
-      <hr/>
     </div>
   );
 };
 
-export default Header;
+export default Navbar;

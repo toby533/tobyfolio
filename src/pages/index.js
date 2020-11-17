@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Navbar  from '../components/Navbar/Navbar';
 import App from '../components/App';
 import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,6 +17,7 @@ export default () => {
         <html lang={lang} />
         <meta name="description" content={description} />
       </Helmet>
+      <Navbar />
       <App />
     </>
   );
