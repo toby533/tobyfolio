@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import ProjectImg from '../Image/ProjectImg';
+import { Link } from "gatsby"
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -27,10 +28,10 @@ const Projects = () => {
           const { title, info, tag, url, img, id } = project;
 
           return (
-            <Row key={id}>
+            <Row key={id} id={id}>
               <Col lg={12} sm={12}>
                   <div className="project-wrapper__image">
-                    <a
+                    <Link
                       href={url}
                       aria-label="Project Link"
                       rel="noopener noreferrer"
@@ -40,7 +41,7 @@ const Projects = () => {
                           <ProjectImg alt={title} filename={img} />
                         </div>
                     </Fade>
-                    </a>
+                    </Link>
                   </div>
               </Col>
               <Col lg={12} sm={12}>
@@ -54,14 +55,14 @@ const Projects = () => {
                       <p className="tag">
                         {tag}
                       </p>
-                      <a
+                      <Link
                         target="_self"
                         rel="noopener noreferrer"
                         className="cool-link"
                         href={url}
                       >
                         See project
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </Fade>

@@ -1,0 +1,19 @@
+.logo-container {
+    margin:24px;
+}
+
+nav {
+    margin:2.4rem 0;
+
+    a {
+        color:black;
+        font-size:1.8rem;
+        padding: 14px 34px;
+        text-align: center;
+    }
+
+    .active {
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+        border-radius:1000px;
+    }
+}

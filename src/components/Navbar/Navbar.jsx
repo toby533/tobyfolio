@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../Logo/Logo';
 import Fade from 'react-reveal/Fade';
+import { Link } from "gatsby";
 
-const Welcome = () => {
+const Header = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -18,23 +19,22 @@ const Welcome = () => {
   }, []);
 
   return (
-    <div id="welcome">
+    <div id="Navbar">
       <Fade top={isDesktop} top={isMobile} duration={500} delay={500} distance="50px">
         <Logo/>
       </Fade>
-      <ul>
-          <li>
-              Work
-          </li>
-          <li>
-              About
-          </li>
-      </ul>
-      <Fade bottom={isDesktop} bottom={isMobile} duration={500} delay={600} distance="50px">
-        <hr/>
-      </Fade>
+      <hr/>
+      <nav>
+        <Link to="/" activeClassName="active">
+          Work
+        </Link>
+        <Link to="/about/">
+          About
+        </Link>
+      </nav>
+      <hr/>
     </div>
   );
 };
 
-export default Welcome;
+export default Header;

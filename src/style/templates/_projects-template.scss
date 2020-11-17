@@ -1,14 +1,54 @@
-.projects-template-img {
-    width: 65%;
+.projects-container {
+    width: 100vw;
+    padding: 0px;
 
-    @include respond(phone) {
-        width:100%;
+    .projects-template-text {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        width: 35%;
+        text-align: left;
+        padding: 50px;
+        height: 100vh;
+        text-transform: none;
+        background-color: $white-color;
+    
+        @include respond(phone) {
+            position: initial;
+            width:100%;
+            height: auto;
+        }
+    }
+
+    h1 {
+        font-family: $fancy-font;
+        font-size: 2.8rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size:1.8rem;
+        margin-top: 4rem;
+      }
+
+    p {
+        font-size:1.8rem
+    }
+
+    .projects-template-img {
+        width: 65%;
+    
+        @include respond(phone) {
+            width:100%;
+        }
+    }
+    
+    .back-button {
+        margin-bottom: 2rem;
     }
 }
 
-.back-button {
-    margin-bottom: 2rem;
-}
 
 .back-button a i {
     font-size: 1.4rem;
@@ -21,25 +61,10 @@
     text-align: center;
 }
 
-.projects-template-text {
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    width: 35%;
-    text-align: left;
-    padding: 50px;
-    height: 100vh;
-    text-transform: none;
-    background-color: $white-color;
-
-    @include respond(phone) {
-        position: initial;
-        width:100%;
-        height: auto;
-    }
+.link-project {
+    display: inline-block;
 }
 
-.projects-container {
-    width: 100vw;
-    padding: 0px;
+.next {
+    float: right;
 }

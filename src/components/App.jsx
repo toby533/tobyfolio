@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import FixedName from  './FixedName/FixedName';
-import Welcome from './Welcome/Welcome';
+import Navbar from './Navbar/Navbar';
 import Hero from './Hero/Hero';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
@@ -26,7 +26,7 @@ function App() {
   return (
     <PortfolioProvider className="row" value={{ hero, projects, contact, footer }}>
       <FixedName />
-      <Welcome />
+      <Navbar />
       <Projects />
       <Hero />
       <Contact />

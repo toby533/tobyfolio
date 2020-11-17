@@ -22,13 +22,15 @@ export default function BlogPost({ data }) {
     <div className="projects-container">
       <div className="projects-template-text">
         <div className="back-button"><a href="/" alt="back button"><i class="fa fa-long-arrow-left"></i></a></div>
-        <h2>{post.frontmatter.keywords}</h2>
+        <h2>{post.frontmatter.tag}</h2>
         <h1>{post.frontmatter.title}</h1>
-        <p className="project-text en">{post.frontmatter.text_en}</p>
-        <p className="project-text fr">{post.frontmatter.text_fr}</p>
+        <p className="project-text">{post.frontmatter.text}</p>
+        <div className="visit-button">
+          <a href="/" alt="visit project"></a>
+        </div>
       </div>
       <div className="projects-template-img">
-          <ProjectImg alt={post.frontmatter.img} filename={post.frontmatter.img} />
+        <ProjectImg alt={post.frontmatter.img} filename={post.frontmatter.img} />
       </div>
     </div>
   )
@@ -40,10 +42,9 @@ export const query = graphql`
       html
       frontmatter {
         title
-        keywords
+        tag
         img
-        text_en
-        text_fr
+        text
       }
     }
   }
