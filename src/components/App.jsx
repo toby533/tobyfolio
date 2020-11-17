@@ -9,6 +9,7 @@ import { PortfolioProvider } from '../context/context';
 import { projectsData, contactData, footerData } from '../mock/data';
 
 function App() {
+
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});

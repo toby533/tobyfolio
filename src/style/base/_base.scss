@@ -6,7 +6,6 @@ body {
   font-family: $default-font;
   font-weight: 100;
   text-align: center;
-  background: $white-color;
 }
 
 .FixedName #thibault {
@@ -45,7 +44,7 @@ body {
   position: absolute;
   top: 0;
   left: 0px;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
@@ -62,7 +61,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -70,4 +69,18 @@ body {
   -webkit-transition: left .3s ease-in;
   -moz-transition: left .3s ease-in;
   transition: left .3s ease-in;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 36px;
+  left: 3rem;
+}
+
+.change-color {
+  align-items: center;
+  width:18px;
+  height:18px;
+  border:2px solid;
+  border-radius: 18px;
 }

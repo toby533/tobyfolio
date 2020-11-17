@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 import { Link } from "gatsby";
 
 const Navbar = () => {
-
+  
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -21,8 +21,7 @@ const Navbar = () => {
   return (
     <div id="Navbar">
       <div className="top-nav">
-        <div className="change-color"></div>
-        <Logo/>
+        <Logo />
         <div className="contact"></div>
       </div>
       <nav>

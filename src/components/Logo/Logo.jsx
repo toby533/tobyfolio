@@ -6,7 +6,6 @@ function Logo(props) {
       <title>{"logo-Toby"}</title>
       <path
         d="M29.201 54V10.539H45L34.708 0H19v43.368L29.201 54zM16 10V0H0l10.483 10H16z"
-        fill="#000"
         fillRule="nonzero"
       />
     </svg>

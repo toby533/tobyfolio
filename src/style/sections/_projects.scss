@@ -52,10 +52,6 @@
         font-size:1.4rem;
         font-style: italic;
       }
-
-      & p > a {
-        color: $secondary-color;
-      }
     }
 
     &__image {
@@ -68,30 +64,4 @@
       }
     }
   }
-}
-
-.cool-link {
-  margin-top:5rem;
-  text-transform: uppercase;
-  display: inline-block;
-  color: #000;
-  text-decoration: none;
-}
-
-.cool-link:hover {
-  color: #000;
-  text-decoration: none;
-}
-
-.cool-link::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #000;
-  transition: width .3s;
-}
-
-.cool-link:hover::after {
-  width: 100%;
 }

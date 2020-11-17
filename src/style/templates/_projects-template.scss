@@ -11,7 +11,6 @@
         padding: 50px;
         height: 100vh;
         text-transform: none;
-        background-color: $white-color;
     
         @include respond(phone) {
             position: initial;
@@ -52,8 +51,6 @@
 
 .back-button a i {
     font-size: 1.4rem;
-    color: $white-color;
-    background-color: $black-color;
     height: 32px;
     width: 32px;
     border-radius: 32px;
