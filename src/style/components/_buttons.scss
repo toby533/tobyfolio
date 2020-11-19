@@ -20,3 +20,17 @@
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
   }
 }
+
+.toggle-btn {
+  position: absolute;
+  top: 40px;
+  left: 3rem;
+  cursor: pointer;
+}
+
+.mail-btn {
+  position: absolute;
+  top: 34px;
+  right: 3rem;
+  cursor: pointer;
+}

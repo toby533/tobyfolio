@@ -36,7 +36,6 @@ export default () => {
         <Toggle theme={theme} toggleTheme={toggleTheme} />
         <MailIcon />
         <Navbar />
-        <App />
       </ThemeProvider>
     </>
   );

@@ -2,9 +2,9 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Thibault Drevon, Product designer / Front developer',
+  title: 'Thibault Drevon ⎢ Portfolio',
   lang: 'en, fr',
-  description: 'Hi, my name is Thibault Drevon and this is my Portfolio',
+  description: 'a simple portfolio to present my work',
 };
 
 // HERO DATA

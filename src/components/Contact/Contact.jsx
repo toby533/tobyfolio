@@ -12,6 +12,7 @@ const Contact = () => {
         <div className="contact-wrapper">
           <p>{text}</p>
           <a
+            className="btn-contact"
             target="_blank"
             rel="noopener noreferrer"
             href={`mailto:${email}`}

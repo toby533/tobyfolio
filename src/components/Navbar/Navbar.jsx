@@ -22,19 +22,20 @@ const Navbar = () => {
     <div id="Navbar">
       <div className="top-nav">
         <Logo />
-        <div className="contact"></div>
       </div>
+      <hr />
       <nav>
         <Link to="/" activeClassName="active">
           Work
         </Link>
-        <Link to="/Skills/">
+        <Link to="/skills/" activeClassName="active">
           Skills
         </Link>
-        <Link to="/about/">
+        <Link to="/about/" activeClassName="active">
           About
         </Link>
       </nav>
+      <hr />
     </div>
   );
 };
